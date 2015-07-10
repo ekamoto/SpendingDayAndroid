@@ -12,7 +12,7 @@
         <!--android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" [Isso faz com que o papel de parede fique no fundo e não mostre o título]-->
         <!--android:theme="@android:style/Theme.Black.NoTitleBar" [Isso remove o título só que força o tema Black, se colocar na aplication zoa o layout]-->
         <activity android:name=".activity.Splash"
-                  android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+                  android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
