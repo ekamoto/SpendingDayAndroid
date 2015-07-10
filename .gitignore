@@ -1,0 +1,11 @@
+.idea/
+ant.properties
+build.xml
+gastosPorDia.apk
+gastosPorDia.iml
+gen/
+local.properties
+out/
+proguard-project.txt
+project.properties
+

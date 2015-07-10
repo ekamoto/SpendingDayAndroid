@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        style="@style/TitleBar">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fofinha">
+
+        <LinearLayout
+                style="@style/TitleBar"
+                android:id="@+id/linearLayout1">
+            <ImageView
+                    style="@style/TitleBarLogo"
+                    android:id="@+id/img1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="onClickHome"
+                    android:contentDescription="@null"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginBottom="4dip"
+                    android:paddingBottom="2dip"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="7dip"/>
+
+            <ImageView
+                    android:id="@+id/sep"
+                    android:contentDescription="@null"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ic_launcher"
+                    android:layout_marginRight="7dip"/>
+
+            <TextView
+                    style="@style/TitleBarText"
+                    android:id="@+id/tv1"
+                    android:paddingLeft="@dimen/paddingLeftNameApp"
+                    android:text="@string/home"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <TextView
+                android:id="@+id/label_dias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:text="@string/label_dias"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/dias"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_dias"
+                android:text="30"
+                android:background="@drawable/shape_borda"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+        <TextView
+                android:id="@+id/label_energia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_energia"
+                android:textColor="@android:color/holo_purple"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_font_1"
+                android:layout_below="@+id/dias"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/energia"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_energia"
+                android:text="98,00"
+                android:background="@drawable/shape_borda"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_agua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_agua"
+                android:layout_below="@+id/energia"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/agua"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_agua"
+                android:text="44,00"
+                android:background="@drawable/shape_borda"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agua"
+                android:text="@string/label_gas"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/gas"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_gas"
+                android:text="16,66"
+                android:background="@drawable/shape_borda"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_carne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gas"
+                android:text="@string/label_carne"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/carne"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_carne"
+                android:background="@drawable/shape_borda"
+                android:text="120,00"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_verdura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carne"
+                android:text="@string/label_verdura"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/verdura"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_verdura"
+                android:background="@drawable/shape_borda"
+                android:text="120,00"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_compra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/verdura"
+                android:text="@string/label_compra"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/compra"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_compra"
+                android:background="@drawable/shape_borda"
+                android:text="350,00"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_qtd_pessoas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/compra"
+                android:text="@string/label_qtd_pessoas"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/qtd_pessoas"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_qtd_pessoas"
+                android:text="2"
+                android:background="@drawable/shape_borda"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_dias_calc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qtd_pessoas"
+                android:text="@string/label_dias_calc"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/dias_calc"
+                android:layout_width="@dimen/size_campo_texto_1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_dias_calc"
+                android:text="1"
+                android:background="@drawable/shape_borda"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <TextView
+                android:id="@+id/label_valor_dias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dias_calc"
+                android:text="@string/label_valor_dias"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="@dimen/size_font_1"
+                android:textStyle="bold"
+                android:shadowColor="@color/text_sombra"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+
+        <EditText
+                android:id="@+id/valor_dias"
+                android:layout_width="@dimen/size_campo_texto_2"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_valor_dias"
+                android:background="@drawable/shape_borda"
+                android:text="00,00"
+                android:layout_marginLeft="@dimen/size_margin_left"
+                android:shadowColor="@color/edit_text"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2.4"/>
+
+        <Button
+                android:id="@+id/processar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapebutton"
+                android:layout_marginTop="20dp"
+                android:text="@string/Processar"
+                android:layout_below="@+id/valor_dias"
+                android:layout_marginLeft="@dimen/size_margin_left"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+

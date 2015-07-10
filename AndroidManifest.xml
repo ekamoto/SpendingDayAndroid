@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="br.com.hisamoto.gastosPorDia"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="17"/>
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher">
+
+        <!--Foi adicionado as rotinas:-->
+        <!--android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" [Isso faz com que o papel de parede fique no fundo e não mostre o título]-->
+        <!--android:theme="@android:style/Theme.Black.NoTitleBar" [Isso remove o título só que força o tema Black, se colocar na aplication zoa o layout]-->
+        <activity android:name=".activity.Splash"
+                  android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GastosPorDiaActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
