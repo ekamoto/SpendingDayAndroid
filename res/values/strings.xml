@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">gastosPorDia</string>
+    <string name="app_name">Fofinha</string>
     <string name="label_energia">Energia:</string>
     <string name="label_agua">Água:</string>
     <string name="label_gas">Gás</string>
